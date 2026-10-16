@@ -1,0 +1,13 @@
+[project]
+name = "group-command-bot"
+version = "0.1.0"
+description = "Extensible group command bot built with NoneBot2"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "nonebot2[fastapi]>=2.4,<3",
+    "nonebot-adapter-console>=0.9,<1",
+]
+
+[tool.nonebot]
+plugins = ["plugins.commands"]
